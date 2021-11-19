@@ -1,4 +1,3 @@
-import {render} from "@testing-library/react";
 import PrimeraApp from "../PrimeraApp";
 import {  shallow  } from 'enzyme';
 
@@ -14,5 +13,21 @@ describe('Pruebas en <PrimeraApp />', ()=> {
         const wrapper = shallow(<PrimeraApp saludo={saludo}/>); // es igual que el render de jest
 
         expect(wrapper).toMatchSnapshot();
+    });
+
+    test('debe de mostrar el subtitulo por props', ()=>{
+        const saludo = "Hola, Soy Goku";
+        const subtitulo = "Soy un subtitulo";
+        const wrapper = shallow(
+            <PrimeraApp
+                saludo={saludo}
+                subtitulo={subtitulo}
+            />
+        ); // es igual que el render de jest
+
+        const textoParafo = wrapper.find('p').text();
+
+        expect(textoParafo).toBe( subtitulo );
+
     });
 });
