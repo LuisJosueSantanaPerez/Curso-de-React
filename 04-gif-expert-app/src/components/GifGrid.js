@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import {GifGridItem} from "./GifGridItem";
 import {useFetchGifs} from "../hooks/useFetchGifs";
-import {Spinner, Stack} from "react-bootstrap";
+import {Col, Row, Spinner} from "react-bootstrap";
 
 export const GifGrid = ({ category }) => {
 
@@ -13,13 +13,15 @@ export const GifGrid = ({ category }) => {
 
             {  loading && <Spinner animation="grow" variant="dark" />  }
 
-            <Stack direction="horizontal" gap={3}>
-                    {
-                        images.map(  ({id, title, url }) => (
+            <Row>
+                {
+                    images.map(  ({id, title, url }) => (
+                        <Col sm={3}>
                             <GifGridItem key={id} title={title} url={url}/>
-                        ))
-                    }
-            </Stack>
+                        </Col>
+                    ))
+                }
+            </Row>
         </>
     );
 }

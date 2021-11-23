@@ -20,7 +20,6 @@ export const AddCategory = ({setCategories}) => {
     }
 
     return (
-
         <Form className="d-flex" onSubmit={ handleSubmit }>
             <FormControl
                 type="search"
@@ -32,15 +31,6 @@ export const AddCategory = ({setCategories}) => {
             />
             <Button type="submit" variant="outline-success">Search</Button>
         </Form>
-
-
-      // <form onSubmit={ handleSubmit }>
-      //     <input
-      //         type="text"
-      //         value={ inputValue }
-      //         onChange={ handleInputChange }
-      //     />
-      // </form>
     )
 }
 
