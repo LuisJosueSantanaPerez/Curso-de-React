@@ -16,8 +16,8 @@ export const GifGrid = ({ category }) => {
             <Row>
                 {
                     images.map(  ({id, title, url }) => (
-                        <Col sm={3}>
-                            <GifGridItem key={id} title={title} url={url}/>
+                        <Col sm={3} key={id}>
+                            <GifGridItem title={title} url={url}/>
                         </Col>
                     ))
                 }

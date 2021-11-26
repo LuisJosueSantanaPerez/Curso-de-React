@@ -24,19 +24,19 @@ exports[`Probando en el <GifGrid/> debe de mostrar items cuando se cargan imagen
   </h3>
   <Row>
     <Col
+      key="23"
       sm={3}
     >
       <GifGridItem
-        key="23"
         title="Cualquier cosa"
         url="https://localhost:8080/cualquiercosa.jpg"
       />
     </Col>
     <Col
+      key="24"
       sm={3}
     >
       <GifGridItem
-        key="24"
         title="Cualquier cosa"
         url="https://localhost:8080/cualquiercosa.jpg"
       />
