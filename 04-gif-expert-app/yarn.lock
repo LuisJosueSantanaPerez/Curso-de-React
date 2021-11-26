@@ -4701,7 +4701,7 @@
     "lodash" "^4.17.21"
     "react-is" "^16.12.0"
 
-"enzyme@^3.0.0", "enzyme@^3.4.0":
+"enzyme@^3.0.0", "enzyme@^3.11.0", "enzyme@^3.4.0":
   "integrity" "sha512-Dw8/Gs4vRjxY6/6i9wU0V+utmQO9kvh9XLnz3LIudviOnVYDEe2ec+0k+NQoMamn1VrjKgCUOWj5jG/5M5M0Qw=="
   "resolved" "https://registry.npmjs.org/enzyme/-/enzyme-3.11.0.tgz"
   "version" "3.11.0"

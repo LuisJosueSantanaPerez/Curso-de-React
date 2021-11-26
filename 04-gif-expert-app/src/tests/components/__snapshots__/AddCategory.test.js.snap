@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando el <AddCategory /> debe de mostrar el componente 1`] = `
+<Form
+  className="d-flex"
+  onSubmit={[Function]}
+>
+  <FormControl
+    aria-label="Search"
+    className="me-2"
+    onChange={[Function]}
+    placeholder="Search"
+    type="search"
+    value=""
+  />
+  <Button
+    active={false}
+    disabled={false}
+    type="submit"
+    variant="outline-success"
+  >
+    Search
+  </Button>
+</Form>
+`;
